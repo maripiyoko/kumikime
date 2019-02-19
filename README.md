@@ -1,22 +1,21 @@
 # kumikime
 
-> Find the best combination of groups
+Find the best combination of groups
+
+## Netlify
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fbf92c96-1b4e-4c43-8018-b40bc0820713/deploy-status)](https://app.netlify.com/sites/kumikime/deploys)
+
+
 
 ## Build Setup
 
 ``` bash
-# install dependencies
-$ yarn install
-
 # serve with hot reload at localhost:3000
-$ yarn run dev
+$ npm run dev
 
 # build for production and launch server
-$ yarn run build
-$ yarn start
+$ npm run build
+$ npm start
 
-# generate static project
-$ yarn run generate
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
