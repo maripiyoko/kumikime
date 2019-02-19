@@ -1,68 +1,55 @@
-<template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        kumikime
-      </h1>
-      <h2 class="subtitle">
-        Find the best combination of groups
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+  .container
+    TheAbout
+    section.group
+      h3 Groups
+    section.members
+      h3 Members
+    section.result
+      h3 Result
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import TheAbout from '~/components/TheAbout.vue'
 
 export default {
   components: {
-    Logo
+    TheAbout
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="sass">
+section
+  width: 100%
+  padding: 60px 20px
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+.container
+  margin: 0 auto
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: start
+  align-items: center
+  text-align: center
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+.group
+  background-color: $color-blue
 
-.links {
-  padding-top: 15px;
-}
+.members
+  background-color: $color-yellow
+
+.result
+  background-color: $color-pink
+
+p
+  font-size: 1rem
+  line-height: 1.7
+  letter-spacing: 6px
+
+a
+  cursor: pointer
+  text-decoration: none
+  font-weight: bolder
+  color: $color-text-link
 </style>
