@@ -34,7 +34,12 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: [],
+  modules: ['@nuxtjs/style-resources'],
+  styleResources: {
+    sass: [
+      '~/assets/sass/variables.sass'
+    ]
+  },
 
   /*
   ** Build configuration
