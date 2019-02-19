@@ -13,12 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/style-resources": "^0.1.2",
     "cross-env": "^5.2.0",
     "nuxt": "^2.3.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
-    "@nuxtjs/style-resources": "^0.1.2",
     "babel-eslint": "^8.2.1",
     "eslint": "^5.0.1",
     "eslint-config-prettier": "^3.1.0",
