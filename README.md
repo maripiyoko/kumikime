@@ -18,4 +18,6 @@ $ npm run dev
 $ npm run build
 $ npm start
 
+# generate ssr
+$ npm run generate
 ```
