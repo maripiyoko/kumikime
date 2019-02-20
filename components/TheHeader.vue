@@ -3,11 +3,11 @@
     nav
       ul.nav.nav__left
         li
-          img(src="~assets/favicon.svg" alt="Brand")
+          img(src="~assets/images/favicon.svg" alt="Brand")
         li
-          img(src="~assets/github.svg" alt="GitHub")
+          img(src="~assets/images/github.svg" alt="GitHub")
         li
-          img(src="~assets/twitter.svg" alt="twitter")
+          img(src="~assets/images/twitter.svg" alt="twitter")
       ul.nav.nav__right
         li
           a(href="#") グループ

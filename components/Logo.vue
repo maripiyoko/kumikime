@@ -21,13 +21,13 @@
   height: 0
 
 .Circle
-  background-image: url('~assets/flower_circle.svg')
+  background-image: url('~assets/images/flower_circle.svg')
   background-size: cover
   width: 230px
   height: 195px
 
 .Letter
-  background-image: url('~assets/logo_text.svg')
+  background-image: url('~assets/images/logo_text.svg')
   background-size: cover
   width: 72px
   height: 72px
