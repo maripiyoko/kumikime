@@ -7,14 +7,17 @@
       h3 Members
     section.result
       h3 Result
+    TheFooter
 </template>
 
 <script>
 import TheAbout from '~/components/TheAbout.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
 export default {
   components: {
-    TheAbout
+    TheAbout,
+    TheFooter
   }
 }
 </script>

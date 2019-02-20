@@ -19,6 +19,7 @@
 
 <style lang="sass" scoped>
 header
+  position: fixed
   width: 100%
   height: 80px
   display: flex
