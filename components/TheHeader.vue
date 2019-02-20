@@ -10,11 +10,11 @@
           img(src="~assets/images/twitter.svg" alt="twitter")
       ul.nav.nav__right
         li
-          a(href="#") グループ
+          a(href="#group") グループ
         li
-          a(href="#") 参加者
+          a(href="#members") 参加者
         li
-          a(href="#") 結果
+          a(href="#result") 結果
 </template>
 
 <style lang="sass" scoped>
