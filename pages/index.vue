@@ -44,6 +44,13 @@ p
   line-height: 1.7
   letter-spacing: 6px
 
+@media screen and (max-width: $vp-desktop)
+  .desktop-only
+    display: none !important
+@media screen and (max-width: $vp-smallest)
+  .hidden-smallest
+    display: none !important
+
 a
   cursor: pointer
   text-decoration: none

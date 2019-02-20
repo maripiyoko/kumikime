@@ -15,7 +15,7 @@
 <style lang="sass" scoped>
 .footer
   background-image: url('~assets/images/footer_bg.jpg')
-  background-size: contain
+  background-size: cover
   display: flex
   flex-direction: column
   align-items: stretch

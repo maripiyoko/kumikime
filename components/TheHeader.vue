@@ -1,7 +1,7 @@
 <template lang="pug">
   header.header
     nav
-      ul.nav.nav__left
+      ul.nav.nav__left.hidden-smallest
         li
           img(src="~assets/images/favicon.svg" alt="Brand")
         li

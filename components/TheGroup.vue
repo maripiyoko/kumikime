@@ -1,6 +1,6 @@
 <template lang="pug">
   section#group
-    img.icon(src="~/assets/images/circle_group.svg", alt="group")
+    img.hidden-smallest.icon(src="~/assets/images/circle_group.svg", alt="group")
     h3
       .title
     p 

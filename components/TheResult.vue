@@ -1,6 +1,6 @@
 <template lang="pug">
   section#result
-    img.icon(src="~/assets/images/circle_result.svg", alt="result")
+    img.hidden-smallest.icon(src="~/assets/images/circle_result.svg", alt="result")
     h3
       .title
     .input-area
