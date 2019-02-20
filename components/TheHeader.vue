@@ -1,24 +1,25 @@
 <template lang="pug">
   header.header
     nav
-      ul.nav.nav__left
+      ul.nav.nav__left.hidden-smallest
         li
-          img(src="~assets/favicon.svg" alt="Brand")
+          img(src="~assets/images/favicon.svg" alt="Brand")
         li
-          img(src="~assets/github.svg" alt="GitHub")
+          img(src="~assets/images/github.svg" alt="GitHub")
         li
-          img(src="~assets/twitter.svg" alt="twitter")
+          img(src="~assets/images/twitter.svg" alt="twitter")
       ul.nav.nav__right
         li
-          a(href="#") グループ
+          a(href="#group") グループ
         li
-          a(href="#") 参加者
+          a(href="#members") 参加者
         li
-          a(href="#") 結果
+          a(href="#result") 結果
 </template>
 
 <style lang="sass" scoped>
 header
+  position: fixed
   width: 100%
   height: 80px
   display: flex

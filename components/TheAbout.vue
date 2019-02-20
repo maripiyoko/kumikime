@@ -24,4 +24,8 @@ export default {
 <style lang="sass" scoped>
 .about
   background-color: $color-yellow
+  background-image: url('~assets/images/dots.png')
+  background-size: contain
+  padding-top: 120px
+  margin-top: 80px
 </style>
