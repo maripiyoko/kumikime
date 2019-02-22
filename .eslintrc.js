@@ -15,5 +15,8 @@ module.exports = {
     'prettier'
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    "no-console": 0,
+    "camelcase": 0
+  }
 }
