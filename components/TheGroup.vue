@@ -10,8 +10,43 @@
       br
       |1行が1つのグループです。
     .input-area
-      textarea.input(placeholder="入力例\nポスター描き,2\nお祭り販売手伝い,6")
+      textarea.input(placeholder="入力例\nポスター描き,2\nお祭り販売手伝い,6" @change="methodGroups")
+    .row(v-if="groupCount > 0")
+      table
+        thead
+          tr
+            th ID
+            th グループ名
+            th 必要な人数
+        tbody
+          tr(v-for="group in groups" :key="id")
+            td {{ group.id }}
+            td {{ group.name }}
+            td {{ group.num }}
+          tr
+            td(colspan="3") total {{ totalRequiredMembers }}
 </template>
+
+<script>
+import { mapGetters, mapActions } from 'vuex'
+
+export default {
+  computed: {
+    groupCount() {
+      return this.groups.length
+    },
+    ...mapGetters('group', ['groups', 'totalRequiredMembers'])
+  },
+  methods: {
+    methodGroups(event) {
+      const groups = event.target.value.split(/\r\n|\r|\n/)
+      this.setGroups({ groups })
+    },
+    ...mapActions('group', ['setGroups'])
+  }
+}
+</script>
+
 
 <style lang="sass" scoped>
 #group
