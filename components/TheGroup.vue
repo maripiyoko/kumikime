@@ -10,7 +10,7 @@
       br
       |1行が1つのグループです。
     .input-area
-      textarea.input(placeholder="入力例\nポスター描き,2\nお祭り販売手伝い,6" @change="methodGroups")
+      textarea.input(placeholder="入力例\nポスター描き,2\nお祭り販売手伝い,6" @input="methodGroups")
     .row(v-if="groupCount > 0")
       table
         thead
@@ -19,7 +19,7 @@
             th グループ名
             th 必要な人数
         tbody
-          tr(v-for="group in groups" :key="id")
+          tr(v-for="group in groups" :key="group.id")
             td {{ group.id }}
             td {{ group.name }}
             td {{ group.num }}
