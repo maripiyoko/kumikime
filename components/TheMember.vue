@@ -10,8 +10,41 @@
       br
       |1行が1人です。
     .input-area
-      textarea.input(placeholder="入力例\n田中さん,2,1,4\n山田さん,6,2,1")
+      textarea.input(placeholder="入力例\n田中さん,2,1,4\n山田さん,6,2,1", @input="methodMembers")
+    .row(v-if="hasMembers")
+      table
+        thead
+          tr
+            th ID
+            th 名前
+            th 希望
+        tbody
+          tr(v-for="member in members" :key="member.id")
+            td {{member.id}}
+            td {{member.name}}
+            td {{member.choices}}
+
 </template>
+
+<script>
+import { mapGetters, mapActions } from 'vuex'
+export default {
+  computed: {
+    hasMembers() {
+      return this.members.length > 0
+    },
+    ...mapGetters('members', ['members'])
+  },
+  methods: {
+    methodMembers(event) {
+      const members = event.target.value.split(/\r\n|\r|\n/)
+      this.setMembers({ members })
+    },
+    ...mapActions('members', ['setMembers'])
+  }
+}
+</script>
+
 
 <style lang="sass" scoped>
 #members
