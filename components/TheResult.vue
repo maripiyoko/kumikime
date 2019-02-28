@@ -4,8 +4,27 @@
     h3
       .title
     .input-area
+      button(@click="findResult") Result
       textarea.input(readonly=true)
 </template>
+
+<script>
+import { mapGetters, mapActions } from 'vuex'
+
+export default {
+  computed: {
+    ...mapGetters('result', ['result']),
+    ...mapGetters('group', ['groups']),
+    ...mapGetters('members', ['members'])
+  },
+  methods: {
+    findResult() {
+      this.matchResult({ groups: this.groups, members: this.members })
+    },
+    ...mapActions('result', ['matchResult'])
+  }
+}
+</script>
 
 <style lang="sass" scoped>
 #result
